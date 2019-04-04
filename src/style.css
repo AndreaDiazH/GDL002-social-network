@@ -138,6 +138,39 @@ textarea{
   text-align: -webkit-center;
 }
 
+.btnLike{
+  border: none;
+  background-color: #f7f7f7;
+}
+
+.likeCount{
+  padding-left: 70rem;
+}
+
+.travelIcons{
+  text-align: center;
+}
+
+.travelIcons i{ 
+  color: #69494e;
+  align-items: center;
+  margin: 1% 1.5% 1% 1.5%;
+  opacity: 0.7;
+  text-align: center;
+}
+
+#filterPost{
+  background-color: white;
+  color: black;
+  border: 2px solid #69494e;
+  margin: 1rem;
+}
+
+#valueBtns{
+  margin: 1% 1.5% 1% 1.5%;
+}
+
+
 /* .drop{
   align-content: space-around;
 } */

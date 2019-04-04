@@ -111,8 +111,7 @@ function filterSelected(){
         .add({
           post: post,
           filter: select.value,
-          //last: lastName,
-          //born: date,
+          like: 0
         })
         .then(function(docRef) {
           console.log('Document written with ID: ', docRef.id);
@@ -138,7 +137,7 @@ function readPost (){
       tableData.innerHTML +=
         `
         <div class="card mb-3">
-            <h5 class="card-header">${doc.id}</h5>
+        <h5 class="card-header">${doc.id}<div class= "likeCount"><button class="btnLike" onclick="countLikes('${doc.id}')"><img src="../img/descarga.png"><label id="likes${doc.id}">${doc.data().like}</label></button></div></h5>
           <div class="card-body">
             <p class="card-text">${doc.data().post}</p>
             <button class= "btn btn-danger" onclick ="deletePost('${doc.id}' )" >Eliminar</button>
@@ -148,6 +147,26 @@ function readPost (){
     });
   });
 }
+
+function countLikes (idPost){
+  let countValue= document.getElementById("likes"+ idPost).innerHTML;
+  document.getElementById("likes"+ idPost).innerHTML = ++ countValue;
+  let postPublic = db.collection(collectionName).doc(idPost);
+
+  return postPublic
+  .update({
+    like: countValue
+  })
+  .then(function() {
+    console.log('Document successfully updated!');
+  })
+  .catch(function(error) {
+    // The document probably doesn't exist.
+    console.error('Error updating document: ', error);
+  });
+}
+
+
 //borrar datos
 function deletePost(id) {
   if (!confirm('Realmente desea eliminar?') == true) {
