@@ -136,9 +136,9 @@ function readPost (){
       console.log(`${doc.id} => ${doc.data().post}`);
       tableData.innerHTML +=
         `
-        <div class="card mb-3">
+        <div class="card mb-3 border-secondary mb-3">
         <h5 class="card-header">${doc.id}<div class= "likeCount"><button class="btnLike" onclick="countLikes('${doc.id}')"><img src="../img/descarga.png"><label id="likes${doc.id}">${doc.data().like}</label></button></div></h5>
-          <div class="card-body">
+        <div class="card-body">
             <p class="card-text">${doc.data().post}</p>
             <button class= "btn btn-danger" onclick ="deletePost('${doc.id}' )" >Eliminar</button>
             <button class= "btn btn-warning" onclick ="editionPost('${doc.id}', '${doc.data().post}')" >Editar</button>

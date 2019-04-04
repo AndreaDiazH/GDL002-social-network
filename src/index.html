@@ -144,7 +144,7 @@
   <main> 
     <div class="nav" id="navInicio">
         
-        <nav class="navbar navbar-light" style="background-color: #eddcde;">
+        <nav class="navbar navbar-light" style="background-color: #f7f7f7;">
             <nav class="navbar navbar-expand-lg " >
                   <img width="55rem" src="../img/logofin3.png">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -173,12 +173,14 @@
     </div><!-- fin div inicio -->
     
     <div class="page active" id="home" >
+       <div class="col-md-12 iconBar">
         <h1 class= "travelIcons col-md-12"><i class="fas fa-plane-departure"></i><i class="fas fa-passport"></i><i class="fas fa-globe-americas"></i><i class="fas fa-map-marked-alt"></i></h1>
+        </div>
         <!-- <div id="myWall"> -->
       <div class=" justify-content-md-center">
         <div class="col-md-auto"> 
           <div class="col-md-auto centerPost">    
-          <textarea class="control centerPost"  id="post" placeholder="Compartenos tu experiencia" rows="5"  maxlength="250"></textarea><br/>
+          <textarea class="control centerPost borderPost"  id="post" placeholder="Compartenos tu experiencia" rows="5"  maxlength="250"></textarea><br/>
           <button class= "btn btn-info btncolor" id= "btnPost" >Compartir</button>
           <button class= "btn btn-info btncolor" id= "btnSave" >Guardar</button>
             <div class="select  dropdown-menu-right" >
@@ -187,9 +189,9 @@
                 <option value="Amigos">Amigos</option>
               </select>
             </div>
-            <div id= "valueBtns">
-              <button id="btnPublic" value="public" class= "btn btn-info btncolor">Público</button>
-              <button id="btnFriends" value="friends" class= "btn btn-info btncolor">Amigos</button>
+            <div id= "valueBtns" >
+              <button id="btnPublic" value="public" class= "btn btn-info btncolor btnform travelIcons"><i class="fas fa-users"></i></button>
+              <button id="btnFriends" value="friends" class= "btn btn-info btncolor btnform travelIcons"><i class="fas fa-user-lock"></i></button>
             </div>
             <div id="table-data"></div>
           </div> 

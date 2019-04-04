@@ -107,14 +107,22 @@ p {
   display: block; 
 }
 #home{
-  background-color: #faf2f3;
+  background-color: white;
+ /* background-image: url(../img/blanco-rosa.png); */
+  background-repeat: repeat;
 }
+
 #perfil{
-  background-color: #faf2f3;
+  background-color: white;
+  background-image: url(../img/blanco-rosa.png);
+  background-repeat: repeat;
 }
 #transporte{
-  background-color: #faf2f3;
+  background-color: white;
+  background-image: url(../img/blanco-rosa.png);
+  background-repeat: repeat;
 }
+
 h1{
   font-size: 2rem;
   font-weight: 600;
@@ -170,7 +178,33 @@ textarea{
   margin: 1% 1.5% 1% 1.5%;
 }
 
+.btnform{
+  border-radius: 50%;
+  background: #abffe3;
+  border: 2px solid #692a32; 
+}
 
+.borderPost{
+  border: 2px solid #692a32;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*.cardBorder{
+  border-color: 2px solid #abffe3;
+} */
+
+.iconBar{
+  width: 40%;
+  background-color: white;
+  opacity: 0.8;
+  border: 2px solid #e95c6f;
+  border-radius: 5rem;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+}
 /* .drop{
   align-content: space-around;
 } */
