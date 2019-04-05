@@ -7,8 +7,6 @@
   }
 } */
 
-
-
 body{
   font-family: 'Caudex', serif;
   overflow-x: hidden;
@@ -114,12 +112,12 @@ p {
 
 #perfil{
   background-color: white;
-  background-image: url(../img/blanco-rosa.png);
+ /* background-image: url(../img/blanco-rosa.png); */
   background-repeat: repeat;
 }
 #transporte{
   background-color: white;
-  background-image: url(../img/blanco-rosa.png);
+ /* background-image: url(../img/blanco-rosa.png); */
   background-repeat: repeat;
 }
 
